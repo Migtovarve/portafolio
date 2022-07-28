@@ -4,8 +4,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
-body,html{
+html,body {
+    padding: 0;
+    margin: 0;
+}
 
-    overflow-x: hidden
+/* html,
+body {
+  padding: 0;
+  margin: 0;
+} */
 
+* {
+  box-sizing: border-box;
+}
+
+
+html::-webkit-scrollbar {
+    /* width: 50px;     Tamaño del scroll en vertical
+    height: 50px;    Tamaño del scroll en horizontal */
+    display: none;  /*Ocultar scroll*/
 }
