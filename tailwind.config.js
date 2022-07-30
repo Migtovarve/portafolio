@@ -32,7 +32,20 @@ module.exports = {
 
     },
     maxWidth: {
+      '25': '25rem',
+      '18': '18rem'
+    },
+    minWidth: {
       '16': '16rem',
+      '14': '14rem'
+    },
+    maxHeight: {
+      '25': '25rem',
+      '18': '18rem'
+    },
+    minHeight: {
+      '16': '16rem',
+      '14': '14rem'
     }
   },
   plugins: [],

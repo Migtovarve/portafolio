@@ -11,23 +11,25 @@ export default function Contactame (){
                 <div className="container text-gray-800 px-4 md:px-12 ">
                     <div className="block rounded-lg shadow-lg py-10 md:py-12 px-4 md:px-6 bg-gradient-to-l from-tertiary to-white"
                     >
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-6 mb-12">
-                        <div className="mb-12 lg:mb-0 text-center mx-auto">
-                        <SiLinkedin className="h-12 w-12"/>
-                        <h6 className="font-medium">Linkedin</h6>
+                    <div className="grid grid-cols-1">
+                        <h2 className="text-3xl text-primary text-center font-bold mb-12">Contactame</h2>
+                        {/* <div className="mb-12 lg:mb-0 text-center mx-auto">
+                        <SiLinkedin className="h-8 w-8 md:h-10 md:w-10"/>
+                        <h6 className="hidden md:font-medium">Linkedin</h6>
                         </div>
                         <div className="mb-12 lg:mb-0 text-center mx-auto">
-                        <SiGithub className="h-12 w-12"/>
-                        <h6 className="font-medium">GitHub</h6>
+                        <SiGithub className="h-8 w-8 md:h-10 md:w-10"/>
+                        <h6 className="hidden md:font-medium">GitHub</h6>
                         </div>
                         <div className="mb-6 md:mb-0 text-center mx-auto">
-                        <SiGmail className="h-12 w-12"/>
-                        <h6 className="font-medium">Correo</h6>
+                        <SiGmail className="h-8 w-8 md:h-10 md:w-10"/>
+                        <h6 className="hidden md:font-medium">Correo</h6>
                         </div>
                         <div className="text-center mx-auto">
-                        <SiTelegram className="h-12 w-12"/>
-                        <h6 className="font-medium">Telegram</h6>
-                        </div>
+                        <SiTelegram className="h-8 w-8 md:h-10 md:w-10"/>
+                        <h6 className="hidden md:font-medium">Telegram</h6>
+                        </div> */}
+
                     </div>
                     <div className="max-w-[700px] mx-auto">
                         <form>
@@ -84,13 +86,14 @@ export default function Contactame (){
                             focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
                         " id="exampleFormControlTextarea13" rows="3" placeholder="Message"></textarea>
                         </div>
-                        <div className="form-group form-check text-center mb-6">
+                        {/* <div className="form-group form-check text-center mb-6">
                             <input type="checkbox"
                             className="form-check-input appearance-none h-4 w-4 border border-primary rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain mr-2 cursor-pointer"
                             id="exampleCheck87" checked/>
                             <label className="form-check-label inline-block text-gray-800" htmlFor="exampleCheck87">Send me a copy of this
                             message</label>
-                        </div>
+                        </div> */}
+
                         <button type="submit" className="
                         w-full
                         px-6

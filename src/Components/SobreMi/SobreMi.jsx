@@ -3,17 +3,41 @@ import img from '../Landing/Admin-removebg-preview.png'
 export default function SobreMi() {
     return (
         <>
-        <div className='grid md:grid-cols-2 sm:space-x-6 h-screen  grid-cols-1 mx-12 '>
-            <div className="flex flex-col justify-center items-center mx-auto">
-                <img className="px-6" src={img}  />
-            </div>
-            <div className="flex flex-col justify-center items-center">
-                <div className="px-6">
-                    <h1 className="text-3xl text-primary font-bold">Sobre Mi</h1>
-                    <p className="text-black font-md text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div
+            id='sobreMi'
+            className='
+            grid
+            grid-cols-1
+            mx-12
+            sm:space-x-6
+            md:grid-cols-2
+            xl:text-lg
+            '>
+
+                <div  className="flex flex-col justify-center items-center  min-w-16">
+                    <img className="" src={img}  />
                 </div>
+
+                <div className="flex flex-col justify-center items-center">
+
+                    <div className="min-w-16">
+
+                        <h1 className="text-3xl text-primary font-bold">Sobre Mi</h1>
+
+                        <div className="text-black font-md text-justify">
+                            <p>Hola, mi nombre es Miguel 😄</p><br/>
+
+                            <p>👣 Me formé en el bootcamp de HENRY como full stack developer, porque siempre me llamó la atención programar y automatizar tareas. Descubrí que me gusta colaborar en equipos ya que puedo ayudar y aprender de mis compañeros.</p><br/>
+
+                            <p>💻 Realicé junto con un grupo de seis personas una aplicación web, en donde colaboré como desarrollador Frontend, para que profesionales de la Psicología puedan ofrecer sus servicios a clientes potenciales. También desarrolle una SPA donde puedes buscar información sobre todos los países y crear actividades para realizar en diferentes países.</p><br/>
+
+                            <p>🚀 Siempre me ha apasionado la tecnología y buscar la forma de aplicarla para que me ayude a realizar tareas de forma fácil. Busco siempre aprender y mejorar mis habilidades tanto profesionales como personales para acercarme a la persona que quiero ser.</p><br/>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
-        </div>
         </>
     )
 }

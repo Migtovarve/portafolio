@@ -5,9 +5,9 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Logo from '../Logo/Logo.jsx'
 
 const navigation = [
-  { name: 'Sobre mi', href: '#', current: false },
-  { name: 'Proyectos', href: '#', current: false },
-  { name: 'Contactame', href: '#', current: false },
+  { name: 'Sobre mi', href: '#sobreMi', current: false },
+  { name: 'Proyectos', href: '#proyectos', current: false },
+  { name: 'Contactame', href: '#contactame', current: false },
 ]
 
 function classNames(...classes) {
