@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {BsChevronRight, BsChevronLeft} from 'react-icons/bs'
 const recomendaciones = [ 
     {
@@ -34,11 +34,19 @@ const recomendaciones = [
 ]
 
 export default function Recomendaciones (){
-   const [state, setState] = useState(['hidden','hidden', 'hidden','hidden', '',])
+    const [state, setState] = useState(['hidden','hidden', 'hidden','hidden', '',]);
+    const  [widthScreen, setWidthScreen] = useState(window.innerWidth);
 
 
-    const hidden = 'hidden'
-
+    useEffect(() => {
+        
+    })   
+    
+    function handleResize() {
+        setWidthScreen(window.innerWidth)
+    }
+    window.addEventListener('resize', handleResize)
+    
     const clickNext = (e) => {
         e.preventDefault();
         const i = state.findIndex( el => el.length === 0 );
@@ -60,7 +68,7 @@ export default function Recomendaciones (){
     return (
         <>
 
-            <div className="container my-24 px-6 mx-auto">
+            <div className="container my-24 mx-auto">
 
 
                 <section className="mb-32 text-gray-800 text-center">
@@ -75,14 +83,14 @@ export default function Recomendaciones (){
                                 
                                 return (
                                     <li id={`reco-${index}`} className={`carousel-item ${state[index]} relative float-left w-full`} key={`li-${index}`}>
-                                        <img  className="rounded-full shadow-lg mb-6 mx-auto w-36 "
+                                        <img  className="rounded-full shadow-lg mb-6 mx-auto w-36 h-36 "
                                             src={`${persona.img}`} alt="avatar" /*style="width: 150px" *//>
                                         <div className="flex flex-wrap justify-center">
                                             <div   className="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
-                                                <h5  className="text-lg font-bold mb-3">{`${persona.fullname}`}</h5>
+                                                <h5  className="text-lg text-black font-bold mb-3">{`${persona.fullname}`}</h5>
                                                 <p  className="font-medium text-gray-700 mb-4">{`${persona.profesion}`}</p>
                                                 
-                                                <p  className="text-gray-500 mb-6">
+                                                <p  className="text-black mb-6">
                                                     <svg  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
                                                     className="w-6 pr-2 inline-block text-primary" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path  fill="currentColor"
@@ -102,8 +110,13 @@ export default function Recomendaciones (){
                             onClick={(e)=> clickPrevious(e)}
                             className="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
                             type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                            <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                            <span className="visually-hidden"><BsChevronLeft className="text-primary h-10 w-10 hover:scale-105"/></span>
+
+                            <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true">   
+                            </span>
+
+                            <span className="visually-hidden"><BsChevronLeft className="text-primary h-10 w-10  hover:scale-105"/>
+                            </span>
+                            
                         </button>
                         <button
                             onClick={(e)=> clickNext(e)}
