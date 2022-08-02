@@ -3,45 +3,19 @@ import { useEffect, useState } from "react";
 
 
 //let mybutton = document.getElementById('btn-back-to-top')
-export default function BackToTop() {
-    let [style, setStyle] = useState(false)
-    let [mb, setmb] = useState(false);
-    useEffect(()=>{
-
-        if (mb) {
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function () {
-            scrollFunction();
-            };
-    
-            function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                
-                mb.style.display = 'block';
-            } else {
-                mb.style.display = 'none';
-            }
-            }
-            // When the user clicks on the button, scroll to the top of the document
-            mb.addEventListener('click', backToTop);
-            function backToTop() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-        } 
-
-    }, [mb])
-
+export default function BackToTop({scrollValidate}) {
     return (    
         <>
         {/* <!-- Back to top button --> */}
+        <a href="#home">
         <button
         type="button"
         data-mdb-ripple="true"
         data-mdb-ripple-color="light"
-        className="inline-block p-3 bg-red-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-red-700 hover:shadow-lg focus:bg-red-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-150 ease-in-out hidden bottom-5 right-5 fixed"
+        className={`p-3 bg-primary text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-tertiary hover:text-primary hover:shadow-lg focus:bg-tertiary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5 fixed z-10 ${scrollValidate? 'block': 'hidden'}`}
         id="btn-back-to-top"
         >
+        
             <svg
                 aria-hidden="true"
                 focusable="false"
@@ -57,6 +31,7 @@ export default function BackToTop() {
                 ></path>
             </svg>
         </button>
+        </a>
         
     </>
     )

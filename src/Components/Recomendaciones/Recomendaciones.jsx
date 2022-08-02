@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import {BsChevronRight, BsChevronLeft} from 'react-icons/bs'
+
 const recomendaciones = [ 
     {
-    img: 'https://portafol.vercel.app/static/media/lal.b45c2176a80514d3d864.jpeg',
+    img: 'https://media-exp1.licdn.com/dms/image/C4D03AQFuJS1hN3HeYA/profile-displayphoto-shrink_800_800/0/1658157042746?e=1665014400&v=beta&t=drEzB_pzwWMJSPhkXRP56D2EF3vF5ZWzRKj-tWkkd8o',
     fullname: 'Jhoskar Toro',
     profesion:'Full Stack Developer',
     comentario: 'Miguel es un gran compañero y un excelente programador, posee grandes habilidades sociales y logico-matematicas para resolver cualquier tarea o problema que se le presenten. En cualquier cargo que desempeñe se que explotara todo su potencial para dar lo mejor de si, fue un placer trabajar con él.'
@@ -14,7 +15,7 @@ const recomendaciones = [
     comentario: 'Miguel es un desarrollador con gran capacidad de aprendizaje y facilidad en la resolución de problemas. Es constante, responsable y no se rinde hasta alcanzar los objetivos, apuntando siempre a los mejores resultados. Más allá de sus grandes habilidades técnicas, Miguel es un excelente compañero, siempre dispuesto a ayudar, transmitiendo alegría y positivismo al equipo!'
 },
 {
-    img: 'https://tomas-ledesma.vercel.app/static/media/Profile-removebg-preview-modified-removebg-preview.dc4e6adcfe862ce21211.png',
+    img: 'https://media-exp1.licdn.com/dms/image/D4D35AQHUqjfkzSmGWg/profile-framedphoto-shrink_800_800/0/1657901752345?e=1659970800&v=beta&t=b2vADSGJ7WtgqjuNxcQ0VQwjxYqTWnFYJHne2D2HKcM',
     fullname: 'Tomás Ledesma',
     profesion:'Full Stack Developer',
     comentario: 'Miguel es un excelente compañero, sabe desenvolverse muy bien en el Frontend, tanto lógicamente como a lo que diseño respecta. Compartimos equipo dentro de un proyecto, aquí pude observar que maneja una muy buena comunicación y escucha activa, además esta siempre dispuesto a aprender y a dar una mano a cualquier miembro del equipo que lo necesite.'
@@ -31,21 +32,27 @@ const recomendaciones = [
     profesion:'Full Stack Developer | Web Designer',
     comentario: 'He tenido el placer de compartir un proyecto con Miguel y puedo decir que tiene una gran capacidad y gran conocimiento respecto de la programacion. Además es una gran persona con la que siempre pude contar cada vez que me encontraba trabado o necesitaba ayuda.'
 },
+{
+    img: 'https://media-exp1.licdn.com/dms/image/C4E03AQEqLT2pSyGTJw/profile-displayphoto-shrink_800_800/0/1651720452796?e=1665014400&v=beta&t=hsH1U_au--Y54fEquueDqcdt_WjxusVSFEJHPSHIVEc',
+    fullname: 'Alejandro Palacio',
+    profesion:'Full Stack Developer',
+    comentario: 'Migue es un excelente profesional no solo técnicamente sino también socialmente, trabaja en equipo es autodidacta y además es crack para el Frontend. Un gusto enorme trabajar con él.'
+}
 ]
 
 export default function Recomendaciones (){
-    const [state, setState] = useState(['hidden','hidden', 'hidden','hidden', '',]);
+    const [state, setState] = useState(['','hidden', 'hidden','hidden', 'hidden', 'hidden']);
     const  [widthScreen, setWidthScreen] = useState(window.innerWidth);
 
 
     useEffect(() => {
         
+        function handleResize() {
+            setWidthScreen(window.innerWidth)
+        }
+        window.addEventListener('resize', handleResize)
     })   
     
-    function handleResize() {
-        setWidthScreen(window.innerWidth)
-    }
-    window.addEventListener('resize', handleResize)
     
     const clickNext = (e) => {
         e.preventDefault();

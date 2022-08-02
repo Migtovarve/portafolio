@@ -1,3 +1,4 @@
+import {useEffect, useState} from 'react';
 import Nav from './Components/Nav/Nav.jsx';
 import Landing from './Components/Landing/Landing.jsx';
 import BackToTop from './Components/BackToTop/BackToTop.jsx';
@@ -9,15 +10,31 @@ import Contactame from './Components/Contactame/Contactame.jsx';
 import Footer from './Components/Footer/Footer.jsx';
 import ExpLaboral from './Components/ExpLaboral/ExpLaboral.jsx';
 import img from './Components/ExpLaboral/006ee1d92a392f74c9139-removebg-preview (1).png'
-
+let c =0;
 function App() { 
+  const [scrollValidate, setScrollValidate] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = event => {
+      console.log('window.scrollY', window.scrollY);
+      (window.scrollY !== 0)  ? setScrollValidate(true) : setScrollValidate(false)
+      console.log(scrollValidate);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrollValidate]);
+
   return (
     <>
-      <div className="h-auto w-screen bg-gradient-to-l from-white to-tertiary  z-0">
-        <div className="h-screen w-screen">
+      <div className="h-auto w-screen bg-gradient-to-l from-white to-tertiary  z-0" >
+        <div className="h-screen w-screen" id='home'>
           <Nav/>
           <Landing/>
-          <BackToTop/>
+          <BackToTop scrollValidate={scrollValidate}/>
         </div>
         <div className="">
           <SobreMi/>
