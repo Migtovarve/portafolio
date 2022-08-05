@@ -45,7 +45,7 @@ export default function Landing() {
                         Descarga mi CV
                         </a> 
                     </button>
-                    <Button className="bg-white" text="Contactame" link="#contactame"/>
+                    <Button className="bg-white" text="Contáctame" link="#contactame"/>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                     <a href="https://github.com/Migtovarve" target='_blank'><SiGithub  className="w-9 h-9  text-primary hover:scale-105"/></a>

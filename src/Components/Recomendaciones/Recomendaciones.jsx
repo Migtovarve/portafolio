@@ -2,37 +2,37 @@ import React, { useEffect, useState } from "react";
 import {BsChevronRight, BsChevronLeft} from 'react-icons/bs'
 
 const recomendaciones = [ 
-    {
+    {//jhoskar
     img: 'https://media-exp1.licdn.com/dms/image/C4D03AQFuJS1hN3HeYA/profile-displayphoto-shrink_800_800/0/1658157042746?e=1665014400&v=beta&t=drEzB_pzwWMJSPhkXRP56D2EF3vF5ZWzRKj-tWkkd8o',
     fullname: 'Jhoskar Toro',
     profesion:'Full Stack Developer',
     comentario: 'Miguel es un gran compañero y un excelente programador, posee grandes habilidades sociales y logico-matematicas para resolver cualquier tarea o problema que se le presenten. En cualquier cargo que desempeñe se que explotara todo su potencial para dar lo mejor de si, fue un placer trabajar con él.'
 },
-{
+{//jessi
     img: 'https://media-exp1.licdn.com/dms/image/C4E03AQGxwkKRABsfmg/profile-displayphoto-shrink_800_800/0/1648914317470?e=1664409600&v=beta&t=-NpW-3O2Nt-H4TstQosL_JSBxfkh3QO3LjWAF-gzOzo',
     fullname: 'Jessica Longo',
     profesion:'Full Stack Developer',
     comentario: 'Miguel es un desarrollador con gran capacidad de aprendizaje y facilidad en la resolución de problemas. Es constante, responsable y no se rinde hasta alcanzar los objetivos, apuntando siempre a los mejores resultados. Más allá de sus grandes habilidades técnicas, Miguel es un excelente compañero, siempre dispuesto a ayudar, transmitiendo alegría y positivismo al equipo!'
 },
-{
+{//tomas
     img: 'https://media-exp1.licdn.com/dms/image/D4D35AQHUqjfkzSmGWg/profile-framedphoto-shrink_800_800/0/1657901752345?e=1659970800&v=beta&t=b2vADSGJ7WtgqjuNxcQ0VQwjxYqTWnFYJHne2D2HKcM',
     fullname: 'Tomás Ledesma',
     profesion:'Full Stack Developer',
     comentario: 'Miguel es un excelente compañero, sabe desenvolverse muy bien en el Frontend, tanto lógicamente como a lo que diseño respecta. Compartimos equipo dentro de un proyecto, aquí pude observar que maneja una muy buena comunicación y escucha activa, además esta siempre dispuesto a aprender y a dar una mano a cualquier miembro del equipo que lo necesite.'
 },
-{
+{ //pablo
     img: 'https://pablo-causa.netlify.app/static/media/ProfilePicture.07cabc01698743cf6de4.jpg',
     fullname: 'Pablo Augusto Causa',
     profesion:'Full Stack Developer Jr Advanced.',
     comentario: 'Miguel worked excellent in the team. He was in charge of the Front End of the project and showed great knowledge and skills in order to address all the required tasks. Also, He knew how to adapt very well to the team and cooperate with all the members. I trongly recommend him for any company.'
 },
-{
-    img: 'https://media-exp1.licdn.com/dms/image/D4D35AQGvlCsibn8sxw/profile-framedphoto-shrink_800_800/0/1650117729945?e=1659636000&v=beta&t=fItxv8DIdIC1BWDymeYddTVhhOAIRiK_cC4TaOzOoqE',
+{//eze
+    img: 'https://media-exp1.licdn.com/dms/image/D4D35AQGvlCsibn8sxw/profile-framedphoto-shrink_800_800/0/1650117729945?e=1660341600&v=beta&t=iAMbm77Mf2ivcOIXFwAQFZ5MvCEB4ei0M69ZjZ3p99w',
     fullname: 'Ezequiel Faszczak',
     profesion:'Full Stack Developer | Web Designer',
     comentario: 'He tenido el placer de compartir un proyecto con Miguel y puedo decir que tiene una gran capacidad y gran conocimiento respecto de la programacion. Además es una gran persona con la que siempre pude contar cada vez que me encontraba trabado o necesitaba ayuda.'
 },
-{
+{//ale
     img: 'https://media-exp1.licdn.com/dms/image/C4E03AQEqLT2pSyGTJw/profile-displayphoto-shrink_800_800/0/1651720452796?e=1665014400&v=beta&t=hsH1U_au--Y54fEquueDqcdt_WjxusVSFEJHPSHIVEc',
     fullname: 'Alejandro Palacio',
     profesion:'Full Stack Developer',

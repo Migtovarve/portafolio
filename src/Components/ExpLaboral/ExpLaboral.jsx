@@ -4,8 +4,8 @@ export default function ExpLaboral() {
     return (
         <>
 
-            <ol className="border-l-2 border-primary">
-                <li>
+            <div className="border-l-2 border-primary">
+                <div>
                     <div className="md:flex flex-start min-w-16 xl:text-lg">
                         <div className="bg-primary w-6 h-6 flex items-center justify-center rounded-full -ml-3">
                             <svg aria-hidden="true" focusable="false" data-prefix="fas" className="text-white w-3 h-3" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -20,7 +20,7 @@ export default function ExpLaboral() {
                                 <p  className="font-medium text-primary hover:text-primary focus:text-primary duration-300 transition ease-in-out text-sm  xl:text-lg">May / 22 - Jul / 22</p>
 
                             </div>
-                            <p className="text-gray-700 mb-6">
+                            <div className="text-gray-700 mb-6">
                                 <ul>
                                     <li>- Coordine a un grupo de estudiantes para lograr la integración al grupo de estudio.</li>
                                     <li>- Oriente a los estudiantes en los primeros pasos de la cursada</li>
@@ -30,11 +30,11 @@ export default function ExpLaboral() {
                                     </li>
                                     
                                 </ul>
-                            </p>
+                            </div>
                         </div>
                     </div>
-                </li>
-            </ol>
+                </div>
+            </div>
 
         </>
     )

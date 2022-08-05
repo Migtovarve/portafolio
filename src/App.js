@@ -14,11 +14,11 @@ let c =0;
 function App() { 
   const [scrollValidate, setScrollValidate] = useState(false)
 
-  useEffect(() => {
+  useEffect(() => { // Scroll move detected
     const handleScroll = event => {
-      console.log('window.scrollY', window.scrollY);
+      //console.log('window.scrollY', window.scrollY);
       (window.scrollY !== 0)  ? setScrollValidate(true) : setScrollValidate(false)
-      console.log(scrollValidate);
+      //console.log(scrollValidate);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -30,7 +30,7 @@ function App() {
 
   return (
     <>
-      <div className="h-auto w-screen bg-gradient-to-l from-white to-tertiary  z-0" >
+      <div className="h-auto w-screen bg-gradient-to-l from-white to-tertiary  z-0" id='contenedor' >
         <div className="h-screen w-screen" id='home'>
           <Nav/>
           <Landing/>
@@ -66,10 +66,10 @@ function App() {
 
         <div id='contactame' className="h-screen">
           <Contactame/>
-          <Footer/>
+          
         </div>
 
-
+      <Footer/>
       </div>
 
     </>
