@@ -10,10 +10,17 @@ import Contactame from './Components/Contactame/Contactame.jsx';
 import Footer from './Components/Footer/Footer.jsx';
 import ExpLaboral from './Components/ExpLaboral/ExpLaboral.jsx';
 import img from './Components/ExpLaboral/006ee1d92a392f74c9139-removebg-preview (1).png'
+
+
 let c =0;
+
+
 function App() { 
   const [scrollValidate, setScrollValidate] = useState(false)
+  const [bgCardColor, setBgCardColor] = useState('bg-card-color')
 
+  /*useState("bg-gradient-to-l from-white to-tertiary")*/
+  
   useEffect(() => { // Scroll move detected
     const handleScroll = event => {
       //console.log('window.scrollY', window.scrollY);
@@ -30,7 +37,7 @@ function App() {
 
   return (
     <>
-      <div className="h-auto w-screen bg-gradient-to-l from-white to-tertiary  z-0" id='contenedor' >
+      <div className={`h-auto w-screen z-0`} id='contenedor' >
         <div className="h-screen w-screen" id='home'>
           <Nav/>
           <Landing/>
@@ -40,16 +47,16 @@ function App() {
           <SobreMi/>
         </div>
         <div id='skills' className="">
-          <h1 className="my-10 ml-4 text-3xl font-bold text-primary text-center">Skills</h1>
+          <h1 className="my-10 ml-4 text-3xl font-bold text-center">Skills</h1>
           <Skills/>
         </div>
 
         <div id='proyectos' className="">
-          <h1 className="my-10 ml-4 text-3xl font-bold text-primary text-center">Proyectos</h1>
+          <h1 className="my-10 ml-4 text-3xl font-bold text-center">Proyectos</h1>
           <Proyectos/>
         </div>
 
-        <h3 className="text-3xl text-primary text-center font-bold my-10 -ml-3">Experiencia</h3>
+        <h3 className="text-3xl text-center font-bold my-10 -ml-3">Experiencia</h3>
         <div className="grid md:grid-cols-2 my-8 mx-12 grid-cols-1 aling-start">
           <div className='order-last md:order-start'>
           <ExpLaboral/>

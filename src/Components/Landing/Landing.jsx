@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../Button/Button";
-import RSociales from "../RSociales/RSociales.jsx";
 import perfil from './perfil.png'
 import { SiLinkedin, SiGithub } from "react-icons/si";
 
@@ -25,14 +24,14 @@ export default function Landing() {
                 <h1 className="
                 text-5xl
                 font-bold
-                text-black
+                
                 md:text-6xl
                 ">Miguel Tovar</h1>
 
-                <h5 className="text-xl text-black my-6">Full Stack Web Developer</h5>
+                <h5 className="text-xl  my-6">Full Stack Web Developer</h5>
 
                 <div className="flex items-center justify-center">
-                    <button type="button" className="inline-block mx-2 my-4 px-6 pt-2.5 pb-2 text-primary font-medium text-xs leading-normal uppercase rounded shadow-md bg-white hover:bg-primary hover:text-white hover:shadow-lg focus:bg-primary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex align-center
+                    <button type="button" className="inline-block mx-2 my-4 px-6 pt-2.5 pb-2  font-medium text-xs leading-normal uppercase rounded shadow-md bg-white hover:bg-primary hover:  hover:shadow-lg focus:bg-primary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex align-center
                     ">
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="download"
                         className="w-3 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -48,8 +47,8 @@ export default function Landing() {
                     <Button className="bg-white" text="Contáctame" link="#contactame"/>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
-                    <a href="https://github.com/Migtovarve" target='_blank'><SiGithub  className="w-9 h-9  text-primary hover:scale-105"/></a>
-                    <a href="https://www.linkedin.com/in/miguel-tovar-developer/" target='_blank'><SiLinkedin className="w-9 h-9 text-primary hover:scale-105"/></a>
+                    <a href="https://github.com/Migtovarve" target='_blank'><SiGithub  className="w-9 h-9   hover:scale-105"/></a>
+                    <a href="https://www.linkedin.com/in/miguel-tovar-developer/" target='_blank'><SiLinkedin className="w-9 h-9  hover:scale-105"/></a>
                 </div>
 
             </div>
@@ -58,7 +57,6 @@ export default function Landing() {
 
             <div className="flex items-center justify-center">
                 <img className="rounded-full min-w-14 w-72  border border-1 border-primary" src={perfil}  />
-                <RSociales/>
             </div>
 
         </div>

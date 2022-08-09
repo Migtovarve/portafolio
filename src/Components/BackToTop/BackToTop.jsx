@@ -12,7 +12,7 @@ export default function BackToTop({scrollValidate}) {
         type="button"
         data-mdb-ripple="true"
         data-mdb-ripple-color="light"
-        className={`p-3 bg-primary text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-tertiary hover:text-primary hover:shadow-lg focus:bg-tertiary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5 fixed z-10 ${scrollValidate? 'block': 'hidden'}`}
+        className={`p-3 bg-primary font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-tertiary hover: hover:shadow-lg focus:bg-tertiary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-white-800 active:shadow-lg transition duration-150 ease-in-out bottom-5 right-5 fixed z-10 ${scrollValidate? 'block': 'hidden'}`}
         id="btn-back-to-top"
         >
         

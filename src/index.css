@@ -4,16 +4,36 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
+:root {
+  --primary-color: #000080;
+  --text-color: hsl(0,0%,31%);
+  --bg-color: hsl(0,0%,90%);
+  --bg-card-color: hsl(0,0%,98%)
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+body.dark {
+  --text-color : hsl(0,0%,83%);
+  --bg-color: hsl(0,0%,15%);
+  --bg-card-color: hsl(0,0%,20%)
+}
+
+.nav {
+  background-color: var(--bg-card-color);
+}
+
+.bg-cards {
+  background-color: var(--bg-card-color);
+}
+
 html,body {
     padding: 0;
     margin: 0;
 }
-
-/* html,
-body {
-  padding: 0;
-  margin: 0;
-} */
 
 * {
   box-sizing: border-box;

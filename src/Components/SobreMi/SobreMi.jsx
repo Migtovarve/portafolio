@@ -22,9 +22,9 @@ export default function SobreMi() {
 
                     <div className="min-w-16">
 
-                        <h1 className="text-3xl text-primary font-bold">Sobre Mi</h1>
+                        <h1 className="text-3xl font-bold">Sobre Mi</h1>
 
-                        <div className="text-black font-md text-justify">
+                        <div className=" font-md text-justify">
                             <p>Hola, mi nombre es Miguel 😄</p><br/>
 
                             <p>👣 Me formé en el bootcamp de HENRY como full stack developer, porque siempre me llamó la atención programar y automatizar tareas. Descubrí que me gusta colaborar en equipos ya que puedo ayudar y aprender de mis compañeros.</p><br/>

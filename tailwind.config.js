@@ -28,7 +28,11 @@ module.exports = {
         'bootstrap': '#5a3a7b',
         'tailwind': '#38bdf8',
         'sass': '#c76494',
-  
+        'dm-white': 'hsl(0,0%,90%)',
+        'dm-black': 'hsl(0,0%,31%)',
+        'bg-card-color': 'hsl(0,0%,98%)',
+        'bg-card-color-dark': 'hsl(0,0%,20%)',
+        
       },
       maxWidth: {
         '25': '25rem',

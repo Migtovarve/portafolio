@@ -2,14 +2,14 @@ import React from "react";
 
 export default function Footer() {
     return (
-        <footer className="text-center bg-primary text-white">
+        <footer className="text-center bg-cards">
             <div className="px-6 pt-6">
                 <div className="flex justify-center mb-6">
 
 
                 <a href="https://www.linkedin.com/in/miguel-tovar-developer/" 
                 target="_blank"
-                type="button" className="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                type="button" className="rounded-full border-2 border-white  leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                     <svg aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
@@ -26,7 +26,7 @@ export default function Footer() {
                     </svg>
                 </a>
 
-                <a href="https://github.com/Migtovarve" target="_blank" type="button" className="rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
+                <a href="https://github.com/Migtovarve" target="_blank" type="button" className="rounded-full border-2 border-white  leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
                     <svg aria-hidden="true"
                     focusable="false"
                     data-prefix="fab"
@@ -45,7 +45,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="text-center p-4 bg-primary">
+            <div className="text-center p-4 bg-cards">
                 © 2022 Miguel Tovar
             </div>
         </footer>

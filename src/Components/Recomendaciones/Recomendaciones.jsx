@@ -78,9 +78,9 @@ export default function Recomendaciones (){
             <div className="container my-24 mx-auto">
 
 
-                <section className="mb-32 text-gray-800 text-center">
+                <section className="mb-32 text-center">
 
-                    <h2 className="text-3xl text-primary font-bold mb-12">Recomendaciones</h2>
+                    <h2 className="text-3xl  font-bold mb-12">Recomendaciones</h2>
 
                         <div id="carouselExampleCaptions" className="carousel slide relative carousel-dark" data-bs-ride="carousel">
                         
@@ -94,12 +94,12 @@ export default function Recomendaciones (){
                                             src={`${persona.img}`} alt="avatar" /*style="width: 150px" *//>
                                         <div className="flex flex-wrap justify-center">
                                             <div   className="grow-0 shrink-0 basis-auto w-full lg:w-8/12 px-3">
-                                                <h5  className="text-lg text-black font-bold mb-3">{`${persona.fullname}`}</h5>
-                                                <p  className="font-medium text-gray-700 mb-4">{`${persona.profesion}`}</p>
+                                                <h5  className="text-lg  font-bold mb-3">{`${persona.fullname}`}</h5>
+                                                <p  className="font-medium  mb-4">{`${persona.profesion}`}</p>
                                                 
-                                                <p  className="text-black mb-6">
+                                                <p  className=" mb-6">
                                                     <svg  aria-hidden="true" focusable="false" data-prefix="fas" data-icon="quote-left"
-                                                    className="w-6 pr-2 inline-block text-primary" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                    className="w-6 pr-2 inline-block " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                                                     <path  fill="currentColor"
                                                         d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
                                                     </path>
@@ -121,7 +121,7 @@ export default function Recomendaciones (){
                             <span className="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true">   
                             </span>
 
-                            <span className="visually-hidden"><BsChevronLeft className="text-primary h-10 w-10  hover:scale-105"/>
+                            <span className="visually-hidden"><BsChevronLeft className=" h-10 w-10  hover:scale-105"/>
                             </span>
                             
                         </button>
@@ -130,7 +130,7 @@ export default function Recomendaciones (){
                             className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
                             type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                             <span className="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
-                            <span className="visually-hidden"><BsChevronRight className="text-primary h-10 w-10 hover:scale-105"/></span>
+                            <span className="visually-hidden"><BsChevronRight className=" h-10 w-10 hover:scale-105"/></span>
                         </button>
 
                         </div>

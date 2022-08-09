@@ -34,14 +34,14 @@ export default function Contactame (){
     return (
             <>
                 <div className="container my-24 px-6 mx-auto ">
-                <section className="mb-32 text-gray-800 ">
+                <section className="mb-32  ">
                 <div className="relative overflow-hidden bg-no-repeat bg-cover">
                 </div>
-                <div className="container text-gray-800 px-4 md:px-12 ">
-                    <div className="block rounded-lg shadow-lg py-10 md:py-12 px-4 md:px-6 bg-gradient-to-l from-tertiary to-white"
+                <div className="container  px-4 md:px-12 ">
+                    <div className="block rounded-lg shadow-lg py-10 md:py-12 px-4 md:px-6 bg-cards"
                     >
                     <div className="grid grid-cols-1">
-                        <h2 className="text-3xl text-primary text-center font-bold mb-12">Contactame</h2>
+                        <h2 className="text-3xl  text-center font-bold mb-12">Contactame</h2>
                         {/* <div className="mb-12 lg:mb-0 text-center mx-auto">
                         <SiLinkedin className="h-8 w-8 md:h-10 md:w-10"/>
                         <h6 className="hidden md:font-medium">Linkedin</h6>
@@ -70,14 +70,14 @@ export default function Contactame (){
                             py-1.5
                             text-base
                             font-normal
-                            text-gray-700
+                            
                             bg-white bg-clip-padding
                             border border-solid border-primary
                             rounded
                             transition
                             ease-in-out
                             m-0
-                            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
+                            focus: focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput7"
                             required
                             name="name"
                             placeholder="Name"/>
@@ -89,14 +89,14 @@ export default function Contactame (){
                             py-1.5
                             text-base
                             font-normal
-                            text-gray-700
+                            
                             bg-white bg-clip-padding
                             border border-solid border-primary
                             rounded
                             transition
                             ease-in-out
                             m-0
-                            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
+                            focus: focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleInput8"
                             required
                             name="email"
                             placeholder="Email address"/>
@@ -110,14 +110,14 @@ export default function Contactame (){
                             py-1.5
                             text-base
                             font-normal
-                            text-gray-700
+                            
                             bg-white bg-clip-padding
                             border border-solid border-primary
                             rounded
                             transition
                             ease-in-out
                             m-0
-                            focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                            focus: focus:bg-white focus:border-blue-600 focus:outline-none
                         " id="exampleFormControlTextarea13" required rows="3" placeholder="Message" name="message"></textarea>
                         </div>
                         <button type="submit" className="
@@ -125,14 +125,14 @@ export default function Contactame (){
                         px-6
                         py-2.5
                         bg-white
-                        text-primary
+                        
                         font-bold
                         text-xs
                         leading-tight
                         uppercase
                         rounded
                         shadow-md
-                        hover:bg-primary hover:shadow-lg hover:text-white
+                        hover:bg-primary hover:shadow-lg hover:
                         focus:bg-primary focus:shadow-lg focus:outline-none focus:ring-0
                         active:bg-blue-800 active:shadow-lg
                         transition
