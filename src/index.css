@@ -8,26 +8,31 @@
   --primary-color: #000080;
   --text-color: hsl(0,0%,31%);
   --bg-color: hsl(0,0%,90%);
-  --bg-card-color: hsl(0,0%,98%)
+  --bg-card-color: hsl(0,0%,98%);
+  --transition: color 0.1s, background-color 0.2s ease-in-out;
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  transition: var(--transition);
 }
 
 body.dark {
   --text-color : hsl(0,0%,83%);
   --bg-color: hsl(0,0%,15%);
   --bg-card-color: hsl(0,0%,20%)
+  transition: var(--transition);
 }
 
 .nav {
   background-color: var(--bg-card-color);
+  transition: var(--transition);
 }
 
 .bg-cards {
   background-color: var(--bg-card-color);
+  transition: var(--transition);
 }
 
 html,body {

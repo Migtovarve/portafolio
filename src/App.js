@@ -12,10 +12,10 @@ import ExpLaboral from './Components/ExpLaboral/ExpLaboral.jsx';
 import img from './Components/ExpLaboral/006ee1d92a392f74c9139-removebg-preview (1).png'
 
 
-let c =0;
 
 
 function App() { 
+  const [principalColor, setPrincipalColor] = useState("am-change")
   const [scrollValidate, setScrollValidate] = useState(false)
   const [bgCardColor, setBgCardColor] = useState('bg-card-color')
 
@@ -39,27 +39,27 @@ function App() {
     <>
       <div className={`h-auto w-screen z-0`} id='contenedor' >
         <div className="h-screen w-screen" id='home'>
-          <Nav/>
-          <Landing/>
-          <BackToTop scrollValidate={scrollValidate}/>
+          <Nav principalColor={principalColor}/>
+          <Landing principalColor={principalColor}/>
+          <BackToTop scrollValidate={scrollValidate} principalColor={principalColor}/>
         </div>
         <div className="">
-          <SobreMi/>
+          <SobreMi principalColor={principalColor}/>
         </div>
         <div id='skills' className="">
           <h1 className="my-10 ml-4 text-3xl font-bold text-center">Skills</h1>
-          <Skills/>
+          <Skills principalColor={principalColor}/>
         </div>
 
         <div id='proyectos' className="">
           <h1 className="my-10 ml-4 text-3xl font-bold text-center">Proyectos</h1>
-          <Proyectos/>
+          <Proyectos principalColor={principalColor}/>
         </div>
 
         <h3 className="text-3xl text-center font-bold my-10 -ml-3">Experiencia</h3>
         <div className="grid md:grid-cols-2 my-8 mx-12 grid-cols-1 aling-start">
           <div className='order-last md:order-start'>
-          <ExpLaboral/>
+          <ExpLaboral principalColor={principalColor}/>
           </div>
           <div className=''>
             <img src={img} />
@@ -68,15 +68,15 @@ function App() {
         </div>
 
         <div className="">
-          <Recomendaciones/>
+          <Recomendaciones principalColor={principalColor}/>
         </div>
 
         <div id='contactame' className="h-screen">
-          <Contactame/>
+          <Contactame principalColor={principalColor}/>
           
         </div>
 
-      <Footer/>
+      <Footer principalColor={principalColor}/>
       </div>
 
     </>

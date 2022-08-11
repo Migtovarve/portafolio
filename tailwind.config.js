@@ -32,6 +32,10 @@ module.exports = {
         'dm-black': 'hsl(0,0%,31%)',
         'bg-card-color': 'hsl(0,0%,98%)',
         'bg-card-color-dark': 'hsl(0,0%,20%)',
+        'az-change': "#000080",
+        'am-change': "#F8FF00",
+        've-change': "#357D28",
+        'ro-change': "#EC3D22",
         
       },
       maxWidth: {

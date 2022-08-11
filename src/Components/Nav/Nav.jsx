@@ -15,14 +15,13 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Nav() {
+export default function Nav({principalColor}) {
   const [dark, setDark] = useState('')
   const [toggleI, setToggleI] = useState(<BsMoon alt='icon theme' id='toggle-icon'/>)
   const [toggleText, setToggleText] = useState("Modo oscuro")
   
   useEffect( () => {
     const toggleTheme = document.getElementById("toggle-theme")
-    const toggleThemeSm = document.getElementById("toggle-theme-sm")
     toggleTheme.addEventListener("click", async(e)=> {
       e.preventDefault();
       document.body.classList.toggle("dark");
@@ -63,23 +62,26 @@ export default function Nav() {
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
               
                 <div className="flex-shrink-0 flex items-center">
-                  <Logo/>
+                  <Logo principalColor={principalColor}/>
                 </div>
                 
 
-                <div id="toggle-theme" className='switches h-[2.75rem] absolute right-[0rem] px-[8px] '>
-                        <div className='toggle-theme cursor-pointer flex justify-end items-center h-full'>
-                            {toggleI}
-                        </div>
+                <div id="toggle-theme" className='switches h-[2.75rem] absolute right-[0rem] px-6 '>
+
+                  <div className='toggle-theme cursor-pointer flex justify-end items-center h-full'>
+                    {toggleI}
+                  </div>
+                </div>
+
+                <div className='hidden sm:colors sm:h-[2.75rem] sm:absolute sm:right-14 sm:flex sm:items-center sm:space-x-2 '>
+                    <div className={`colors h-6 w-6 border border-1 bg-az-change cursor-pointer`}></div>
+                    <div className={`colors h-6 w-6 border border-1 bg-am-change cursor-pointer`}></div>
+                    <div className={`colors h-6 w-6 border border-1 bg-ro-change cursor-pointer`}></div>
+                    <div className={`colors h-6 w-6 border border-1 bg-ve-change cursor-pointer`}></div>
                 </div>
 
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
-                  
-
-                    <div className='colors'>
-                      <div className='colors'></div>
-                    </div>
                     {navigation.map((item) => (
                       <a
                         key={item.name}

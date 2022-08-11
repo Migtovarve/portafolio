@@ -4,7 +4,7 @@ import perfil from './perfil.png'
 import { SiLinkedin, SiGithub } from "react-icons/si";
 
 
-export default function Landing() {
+export default function Landing({principalColor}) {
 
     return (
         <div className={`
@@ -31,8 +31,8 @@ export default function Landing() {
                 <h5 className="text-xl  my-6">Full Stack Web Developer</h5>
 
                 <div className="flex items-center justify-center">
-                    <button type="button" className="inline-block mx-2 my-4 px-6 pt-2.5 pb-2  font-medium text-xs leading-normal uppercase rounded shadow-md bg-white hover:bg-primary hover:  hover:shadow-lg focus:bg-primary focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex align-center
-                    ">
+                    <button type="button" className={`inline-block mx-2 my-4 px-6 pt-2.5 pb-2  font-medium text-xs leading-normal uppercase rounded shadow-md bg-${principalColor} hover:bg- hover:  hover:shadow-lg focus:bg- focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out flex align-center
+                    `}>
                         <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="download"
                         className="w-3 mr-2" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                         <path fill="currentColor"
@@ -44,7 +44,7 @@ export default function Landing() {
                         Descarga mi CV
                         </a> 
                     </button>
-                    <Button className="bg-white" text="Contáctame" link="#contactame"/>
+                    <Button principalColor={principalColor} className="bg-white" text="Contáctame" link="#contactame"/>
                 </div>
                 <div className="flex items-center justify-center space-x-2">
                     <a href="https://github.com/Migtovarve" target='_blank'><SiGithub  className="w-9 h-9   hover:scale-105"/></a>
