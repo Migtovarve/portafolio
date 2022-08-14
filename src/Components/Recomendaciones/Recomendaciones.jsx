@@ -33,7 +33,7 @@ const recomendaciones = [
     comentario: 'He tenido el placer de compartir un proyecto con Miguel y puedo decir que tiene una gran capacidad y gran conocimiento respecto de la programacion. Además es una gran persona con la que siempre pude contar cada vez que me encontraba trabado o necesitaba ayuda.'
 },
 {//ale
-    img: 'https://media-exp1.licdn.com/dms/image/C4E03AQEqLT2pSyGTJw/profile-displayphoto-shrink_800_800/0/1651720452796?e=1665014400&v=beta&t=hsH1U_au--Y54fEquueDqcdt_WjxusVSFEJHPSHIVEc',
+    img: 'https://media-exp1.licdn.com/dms/image/D4D35AQGvlCsibn8sxw/profile-framedphoto-shrink_800_800/0/1650117729945?e=1661101200&v=beta&t=7eKi1GfveT1TZiLmdZEh90X-ADNGXyuJ4csFnrakSt4',
     fullname: 'Alejandro Palacio',
     profesion:'Full Stack Developer',
     comentario: 'Migue es un excelente profesional no solo técnicamente sino también socialmente, trabaja en equipo es autodidacta y además es crack para el Frontend. Un gusto enorme trabajar con él.'
