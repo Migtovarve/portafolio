@@ -54,7 +54,7 @@ export default function Skills() {
                 </div>
                 
                 <div className="flex flex-col justify-end items-center h-20 w-20 my-1">
-                    <SiTypescript className="h-20 w-20  text-blue"/>
+                    <SiTypescript className="h-20 w-20  text-[#2f72bc]"/>
                     <p className="text-black font-bold text-xl">TypeScript</p>
                 </div>
 
