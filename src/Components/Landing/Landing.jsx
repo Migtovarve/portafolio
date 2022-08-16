@@ -41,7 +41,7 @@ export default function Landing() {
 
                         </path>
                         </svg>
-                        <a href="https://drive.google.com/file/d/1igZiTUuPSX0o6YH9p3QkJmlLxzqLKYda/view" target='_blank'>
+                        <a href="https://drive.google.com/file/d/1OVPxo-tPEk_mnsR4hXqKRLRNU86y73Z-/view?usp=sharing" target='_blank'>
                         Descarga mi CV
                         </a> 
                     </button>

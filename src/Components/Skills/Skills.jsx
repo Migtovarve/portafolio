@@ -6,6 +6,7 @@ import {
     SiHtml5,
     SiCss3,
     SiJavascript,
+    SiTypescript,
     SiSequelize,
     SiPostgresql,
     SiTailwindcss,
@@ -46,10 +47,17 @@ export default function Skills() {
                     <SiCss3 className="h-20 w-20  text-css"/>
                     <p className="text-black font-bold text-xl">CSS3</p>
                 </div>
+
                 <div className="flex flex-col justify-end items-center h-20 w-20 my-1">
                     <SiJavascript className="h-20 w-20  text-js"/>
                     <p className="text-black font-bold text-xl">JavaScript</p>
                 </div>
+                
+                <div className="flex flex-col justify-end items-center h-20 w-20 my-1">
+                    <SiTypescript className="h-20 w-20  text-blue"/>
+                    <p className="text-black font-bold text-xl">TypeScript</p>
+                </div>
+
                 <div className="flex flex-col justify-end items-center h-20 w-20 my-1">
                     <SiSequelize className="h-20 w-20  text-sequelize"/>
                     <p className="text-black font-bold text-xl">Sequelize</p>
