@@ -1,5 +1,7 @@
 import React from "react";
 import img from '../Landing/Admin-removebg-preview.png'
+import Skills from "../Skills/Skills";
+import Recomendaciones from '../Recomendaciones/Recomendaciones'
 export default function SobreMi() {
     return (
         <>
@@ -12,6 +14,10 @@ export default function SobreMi() {
             sm:space-x-6
             md:grid-cols-2
             xl:text-lg
+            h-screen
+            relative 
+            -top-16
+            pt-16
             '>
 
                 <div  className="flex flex-col justify-center items-center  min-w-16">
@@ -38,6 +44,8 @@ export default function SobreMi() {
                 </div>
 
             </div>
+            <Skills/>
+            <Recomendaciones/>
         </>
     )
 }

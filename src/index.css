@@ -6,9 +6,9 @@
 
 :root {
   --primary-color: #000080;
-  --text-color: hsl(0,0%,31%);
-  --bg-color: hsl(0,0%,90%);
-  --bg-card-color: hsl(0,0%,98%);
+  --text-color: #3f3f3f;
+  --bg-color: #e6e6e6;
+  --bg-card-color: #fafafa;
   --transition: color 0.1s, background-color 0.2s ease-in-out;
 }
 
@@ -19,9 +19,9 @@ body {
 }
 
 body.dark {
-  --text-color : hsl(0,0%,83%);
-  --bg-color: hsl(0,0%,15%);
-  --bg-card-color: hsl(0,0%,20%)
+  --text-color : #d4d4d4;
+  --bg-color: hsl(0, 0%, 15%);
+  --bg-card-color: hsl(0,0%,20%);
   transition: var(--transition);
 }
 

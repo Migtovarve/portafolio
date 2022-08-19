@@ -8,6 +8,7 @@ import {
     SiJavascript,
     SiSequelize,
     SiPostgresql,
+    SiTypescript,
     SiTailwindcss,
     SiBootstrap,
     SiSass,
@@ -16,7 +17,8 @@ import {
 
 export default function Skills() {
     return (
-        <div className="mx-auto">
+        <div className="mx-12">
+            <h1 className="text-3xl text-center font-bold mb-6">Skills</h1>
             <div className="grid
             grid-cols-2
             sm:grid-cols-3
@@ -50,6 +52,12 @@ export default function Skills() {
                     <SiJavascript className="h-20 w-20  text-js"/>
                     <p className=" font-bold text-xl">JavaScript</p>
                 </div>
+
+                <div className="flex flex-col justify-end items-center h-20 w-20 my-1">
+                    <SiTypescript className="h-20 w-20  text-[#3178c6]"/>
+                    <p className=" font-bold text-xl">TypeScript</p>
+                </div>
+
                 <div className="flex flex-col justify-end items-center h-20 w-20 my-1">
                     <SiSequelize className="h-20 w-20  text-sequelize"/>
                     <p className=" font-bold text-xl">Sequelize</p>

@@ -1,14 +1,14 @@
-
+import { Link } from 'react-router-dom'
 import { Disclosure } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import {  MenuIcon, XIcon } from '@heroicons/react/outline'
 import { useEffect, useState } from 'react'
 import {  BsMoon, BsSun  } from 'react-icons/bs'
 import Logo from '../Logo/Logo.jsx'
 
 const navigation = [
-  { name: 'Sobre mi', href: '#sobreMi', current: false },
-  { name: 'Proyectos', href: '#proyectos', current: false },
-  { name: 'Contactame', href: '#contactame', current: false },
+  { name: 'Sobre mi',   href: '/SobreMi', current: false },
+  { name: 'Portafolio', href: '/Portafolio', current: false },
+  { name: 'Contactame', href: '/Contactame', current: false },
 ]
 
 function classNames(...classes) {
@@ -41,7 +41,7 @@ export default function Nav({principalColor}) {
   }, [dark] )
 
 
-  return (
+  return (<div className='relative'>
     <Disclosure as="nav" className={`nav`}>
       {({ open }) => (
         <>
@@ -74,18 +74,19 @@ export default function Nav({principalColor}) {
                 </div>
 
                 <div className='hidden sm:colors sm:h-[2.75rem] sm:absolute sm:right-14 sm:flex sm:items-center sm:space-x-2 '>
-                    <div className={`colors h-6 w-6 border border-1 bg-az-change cursor-pointer`}></div>
-                    <div className={`colors h-6 w-6 border border-1 bg-am-change cursor-pointer`}></div>
-                    <div className={`colors h-6 w-6 border border-1 bg-ro-change cursor-pointer`}></div>
-                    <div className={`colors h-6 w-6 border border-1 bg-ve-change cursor-pointer`}></div>
+                    <div className={`hidden colors h-6 w-6 border border-1 bg-az cursor-pointer`}></div>
+                    <div className={`hidden colors h-6 w-6 border border-1 bg-am cursor-pointer`}></div>
+                    <div className={`hidden colors h-6 w-6 border border-1 bg-ro cursor-pointer`}></div>
+                    <div className={`hidden colors h-6 w-6 border border-1 bg-ve cursor-pointer`}></div>
                 </div>
 
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
+                      <Link to={item.href}>
                       <a
                         key={item.name}
-                        href={item.href}
+                        // href={item.href}
                         className={classNames(
                           'px-3 py-2 rounded-md text-lg  hover:bg-white hover: hover:scale-105 font-medium transition duration-150 '
                         )}
@@ -93,6 +94,7 @@ export default function Nav({principalColor}) {
                       >
                         {item.name}
                       </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
@@ -109,7 +111,7 @@ export default function Nav({principalColor}) {
                   as="a"
                   href={item.href}
                   className={classNames(
-                    'block px-3 py-2 rounded-md text-lg font-medium  hover:bg-white hover: hover:scale-105 font-medium transition duration-150 hover:scale-102'
+                    'block px-3 py-2 rounded-md text-lg font-medium hover:bg-white hover: hover:scale-105 font-medium transition duration-150 hover:scale-102'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
@@ -121,5 +123,5 @@ export default function Nav({principalColor}) {
         </>
       )}
     </Disclosure>
-  )
+  </div>)
 }
