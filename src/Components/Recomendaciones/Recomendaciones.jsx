@@ -15,7 +15,7 @@ const recomendaciones = [
     comentario: 'Miguel es un desarrollador con gran capacidad de aprendizaje y facilidad en la resolución de problemas. Es constante, responsable y no se rinde hasta alcanzar los objetivos, apuntando siempre a los mejores resultados. Más allá de sus grandes habilidades técnicas, Miguel es un excelente compañero, siempre dispuesto a ayudar, transmitiendo alegría y positivismo al equipo!'
 },
 {//tomas
-    img: 'https://media-exp1.licdn.com/dms/image/D4D35AQHUqjfkzSmGWg/profile-framedphoto-shrink_800_800/0/1657901752345?e=1659970800&v=beta&t=b2vADSGJ7WtgqjuNxcQ0VQwjxYqTWnFYJHne2D2HKcM',
+    img: 'https://media-exp1.licdn.com/dms/image/C4D03AQHPQn3Zt0Da6Q/profile-displayphoto-shrink_800_800/0/1657901751450?e=1666224000&v=beta&t=dwAGT2Nh7cO0iPQgUW05_BvQnXWlc3Ol0Z4zGIcsMVM',
     fullname: 'Tomás Ledesma',
     profesion:'Full Stack Developer',
     comentario: 'Miguel es un excelente compañero, sabe desenvolverse muy bien en el Frontend, tanto lógicamente como a lo que diseño respecta. Compartimos equipo dentro de un proyecto, aquí pude observar que maneja una muy buena comunicación y escucha activa, además esta siempre dispuesto a aprender y a dar una mano a cualquier miembro del equipo que lo necesite.'
@@ -27,7 +27,7 @@ const recomendaciones = [
     comentario: 'Miguel worked excellent in the team. He was in charge of the Front End of the project and showed great knowledge and skills in order to address all the required tasks. Also, He knew how to adapt very well to the team and cooperate with all the members. I trongly recommend him for any company.'
 },
 {//eze
-    img: 'https://media-exp1.licdn.com/dms/image/D4D35AQGvlCsibn8sxw/profile-framedphoto-shrink_800_800/0/1650117729945?e=1660341600&v=beta&t=iAMbm77Mf2ivcOIXFwAQFZ5MvCEB4ei0M69ZjZ3p99w',
+    img: 'https://media-exp1.licdn.com/dms/image/D4D35AQGvlCsibn8sxw/profile-framedphoto-shrink_800_800/0/1650117729945?e=1661101200&v=beta&t=7eKi1GfveT1TZiLmdZEh90X-ADNGXyuJ4csFnrakSt4',
     fullname: 'Ezequiel Faszczak',
     profesion:'Full Stack Developer | Web Designer',
     comentario: 'He tenido el placer de compartir un proyecto con Miguel y puedo decir que tiene una gran capacidad y gran conocimiento respecto de la programacion. Además es una gran persona con la que siempre pude contar cada vez que me encontraba trabado o necesitaba ayuda.'

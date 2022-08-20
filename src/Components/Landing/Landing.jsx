@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../Button/Button";
 import perfil from './perfil.png'
 import { SiLinkedin, SiGithub } from "react-icons/si";
-
+import {Link} from 'react-router-dom'
 
 export default function Landing({principalColor}) {
 
@@ -46,7 +46,9 @@ export default function Landing({principalColor}) {
                             Descarga mi CV
                             </a> 
                         </button>
-                        <Button principalColor={principalColor} className="bg-white" text="ir al portafolio" link="#"/>
+                        <Link to='/Portafolio'>
+                            <Button principalColor={principalColor} className="bg-white" text="ir al portafolio" link="#"/>
+                        </Link>
                     </div>
 
                     <div className="flex items-center justify-center space-x-2">
