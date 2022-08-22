@@ -52,7 +52,7 @@ export default function Landing({principalColor}) {
                     </div>
 
                     <div className="flex items-center justify-center space-x-2">
-                        <a href="https://github.com/Migtovarve" target='_blank'><SiGithub  className="w-9 h-9   hover:scale-105"/></a>
+                        <a href="https://github.com/Migtovarve" target='_blank'><SiGithub  className={`w-9 h-9   hover:scale-105 text-az`}/></a>
                         <a href="https://www.linkedin.com/in/miguel-tovar-developer/" target='_blank'><SiLinkedin className={`w-9 h-9  hover:scale-105 text-az`}/></a>
                     </div>
 
@@ -61,7 +61,7 @@ export default function Landing({principalColor}) {
                 {/* flex flex-col justify-center items-center   flex-wrap  */}
 
                 <div className="flex items-center justify-center">
-                    <img className="rounded-full min-w-14 w-72  border border-1 border-primary" src={perfil}  />
+                    <img className={`rounded-full min-w-14 w-72  border border-1 border-az`} src={perfil}  />
                 </div>
 
             </div>
