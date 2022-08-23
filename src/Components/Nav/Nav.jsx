@@ -41,7 +41,7 @@ export default function Nav({principalColor}) {
   }, [dark] )
 
 
-  return (<div className='relative'>
+  return (<div className='relative z-10'>
     <Disclosure as="nav" className={`nav`}>
       {({ open }) => (
         <>
@@ -106,10 +106,12 @@ export default function Nav({principalColor}) {
           <Disclosure.Panel className="sm:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navigation.map((item) => (
+                <Link to={item.href}>
                 <Disclosure.Button
                   key={item.name}
                   as="a"
-                  href={item.href}
+                  
+                  //href={item.href}
                   className={classNames(
                     'block px-3 py-2 rounded-md text-lg font-medium hover:bg-white hover: hover:scale-105 font-medium transition duration-150 hover:scale-102'
                   )}
@@ -117,9 +119,11 @@ export default function Nav({principalColor}) {
                 >
                   {item.name}
                 </Disclosure.Button>
+                </Link>
               ))}
             </div>
           </Disclosure.Panel>
+          
         </>
       )}
     </Disclosure>
