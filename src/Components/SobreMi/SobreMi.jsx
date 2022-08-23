@@ -14,7 +14,7 @@ export default function SobreMi() {
             sm:space-x-6
             md:grid-cols-2
             xl:text-lg
-            h-screen
+            sm:h-screen
             relative 
             -top-16
             pt-16

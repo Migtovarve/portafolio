@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom'
 export default function Landing({principalColor}) {
 
     return (
-        <div className="absolute top-0 w-screen sm:h-screen">
+        <div className="absolute top-0 w-screen h-screen">
             <div className={`
             grid
             grid-cols-1
