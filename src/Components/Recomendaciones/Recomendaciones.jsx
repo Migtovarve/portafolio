@@ -27,7 +27,7 @@ const recomendaciones = [
     comentario: 'Miguel worked excellent in the team. He was in charge of the Front End of the project and showed great knowledge and skills in order to address all the required tasks. Also, He knew how to adapt very well to the team and cooperate with all the members. I trongly recommend him for any company.'
 },
 {//eze
-    img: 'https://media-exp1.licdn.com/dms/image/D4D35AQGvlCsibn8sxw/profile-framedphoto-shrink_800_800/0/1650117729945?e=1661101200&v=beta&t=7eKi1GfveT1TZiLmdZEh90X-ADNGXyuJ4csFnrakSt4',
+    img: 'https://media-exp1.licdn.com/dms/image/D4D35AQGvlCsibn8sxw/profile-framedphoto-shrink_800_800/0/1650117729945?e=1662037200&v=beta&t=iVfHctaSnCBGRhgyustc1Kz7Tnje3IiZs3cpPaHjP_c',
     fullname: 'Ezequiel Faszczak',
     profesion:'Full Stack Developer | Web Designer',
     comentario: 'He tenido el placer de compartir un proyecto con Miguel y puedo decir que tiene una gran capacidad y gran conocimiento respecto de la programacion. Además es una gran persona con la que siempre pude contar cada vez que me encontraba trabado o necesitaba ayuda.'
