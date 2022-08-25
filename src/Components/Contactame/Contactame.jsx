@@ -125,7 +125,7 @@ export default function Contactame (){
                         px-6
                         py-2.5
                         bg-white
-                        
+                        bg-cards
                         font-bold
                         text-xs
                         leading-tight
