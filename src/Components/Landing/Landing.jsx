@@ -42,7 +42,7 @@ export default function Landing({principalColor}) {
 
                             </path>
                             </svg>
-                            <a href="https://drive.google.com/file/d/1igZiTUuPSX0o6YH9p3QkJmlLxzqLKYda/view" target='_blank'>
+                            <a href="https://drive.google.com/file/d/1t87WlYpeGrBaeoAlFTdjdjbFo_bb2arU/view?usp=sharing" target='_blank'>
                             Descarga mi CV
                             </a> 
                         </button>
