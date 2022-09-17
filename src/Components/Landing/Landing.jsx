@@ -32,7 +32,7 @@ export default function Landing({principalColor}) {
                     <h5 className="text-xl  my-6">Full Stack Web Developer</h5>
 
                     <div className="flex items-center justify-center">
-                        <a href="https://drive.google.com/file/d/1t87WlYpeGrBaeoAlFTdjdjbFo_bb2arU/view?usp=sharing" target='_blank'>
+                        <a href="https://drive.google.com/file/d/10w8XwLKynb6w9hZRK53dpkoRWyNZp5of/view?usp=sharing" target='_blank'>
                             <button type="button" className={`inline-block mx-2 my-4 px-6 pt-2.5 pb-2  font-medium text-xs leading-normal uppercase rounded shadow-md hover:bg- hover:  hover:shadow-lg focus:bg- focus:shadow-lg focus:outline-none focus:ring-0 active:bg-primary active:shadow-lg transition duration-150 ease-in-out flex align-center
                         bg-cards
                         `}>
